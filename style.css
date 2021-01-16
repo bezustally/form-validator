@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Sen, sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c9ced3;
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form */
+form {
+  width: 85%;
+}
+
+.form-group {
+  height: 64px; 
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  border-width: thin;
+  border-radius: 5px;
+  text-align: center;
+  height: 25px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.15;
+}
+
+input:valid {
+  border-color: rgba(3, 243, 123, 0.363);
+}
+
+input:invalid {
+  border-color: rgba(243, 3, 3, 0.281);
+}
+
+button {
+  font-size: medium;
+  font-weight: 450;
+  transition: 0.5s;
+  background-size: 200% auto;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  font-family: Sen, sans-serif;
+}
+
+button:hover {
+  background-position: right center;
+}
+
+button:focus {
+  outline: none;
+}
+
+#regbutton {
+  padding-top: 9px;
+  display: flex;
+  justify-content: center;
+}
+
+.message-container {
+  border-radius: 5px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+h1, .message-container {
+  text-decoration: underline;
+}
